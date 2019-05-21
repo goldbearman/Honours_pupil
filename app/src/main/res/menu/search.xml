@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search_item"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:title="Поиск"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/information"
+        android:title="Информация"
+        android:icon="@drawable/ic_information"
+        app:showAsAction="ifRoom"
+        />
+
+</menu>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment"
+    tools:layout_editor_absoluteY="81dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_photo_profile"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="23dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="?attr/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="center"
+        android:text="ОТЛИЧНИК"
+        android:textColor="?attr/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Имя"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_photo_profile" />
+
+    <TextView
+        android:id="@+id/tv_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:text="КЛАСС"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name" />
+
+    <TextView
+        android:id="@+id/tv_study_words"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:text="СЛОВ ИЗУЧЕНО"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_class" />
+
+    <TextView
+        android:id="@+id/tv_dictation_write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:text="ДИКТАНТОВ НАПИСАНО"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_study_words" />
+
+    <EditText
+        android:id="@+id/et_class"
+        android:layout_width="28dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:ems="2"
+        android:gravity="center"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/tv_class"
+        app:layout_constraintTop_toBottomOf="@+id/et_name" />
+
+    <EditText
+        android:id="@+id/et_email_parent"
+        android:layout_width="252dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Укажите почту родителя"
+        android:inputType="textEmailAddress|textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dictation_write" />
+
+    <Button
+        android:id="@+id/btn_theme_dark_blue"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_theme_dark_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_email_parent" />
+
+    <Button
+        android:id="@+id/btn_theme_green"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_theme_green"
+        app:layout_constraintEnd_toStartOf="@+id/btn_theme_dark_blue"
+        app:layout_constraintTop_toBottomOf="@+id/et_email_parent" />
+
+    <Button
+        android:id="@+id/btn_theme_red"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_theme_red"
+        app:layout_constraintEnd_toStartOf="@+id/btn_theme_green"
+        app:layout_constraintTop_toBottomOf="@+id/et_email_parent" />
+
+    <Button
+        android:id="@+id/btn_theme_orange"
+
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_theme_orange"
+        app:layout_constraintEnd_toStartOf="@+id/btn_theme_red"
+        app:layout_constraintTop_toBottomOf="@+id/et_email_parent" />
+
+    <Button
+        android:id="@+id/btn_theme_yellow"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_theme_yellow"
+        app:layout_constraintEnd_toStartOf="@+id/btn_theme_orange"
+        app:layout_constraintTop_toBottomOf="@+id/et_email_parent" />
+
+    <TextView
+        android:id="@+id/tv_number_study_words"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="19dp"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_study_words"
+        app:layout_constraintTop_toBottomOf="@+id/tv_class" />
+
+    <TextView
+        android:id="@+id/tv_number_dictation_write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="19dp"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_dictation_write"
+        app:layout_constraintTop_toBottomOf="@+id/tv_study_words" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="16dp"
+        android:text="Статистика"
+        android:textColor="?attr/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_class" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="16dp"
+        android:text="Статистика"
+        android:textColor="?attr/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_study_words" />
+
+    <TextView
+        android:id="@+id/tv_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Фото"
+        android:textColor="?attr/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/et_name"
+        app:layout_constraintEnd_toEndOf="@+id/iv_photo_profile"
+        app:layout_constraintStart_toStartOf="@+id/iv_photo_profile"
+        app:layout_constraintTop_toTopOf="@+id/iv_photo_profile" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="34dp"
+        android:text="ТЕМА"
+        android:textColor="?attr/colorPrimaryDark"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_email_parent" />
+
+</android.support.constraint.ConstraintLayout>

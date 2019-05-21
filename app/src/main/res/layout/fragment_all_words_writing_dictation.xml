@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DictationFragment.WritingDictation.AllWordsWritingDictationFragment">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_writing_dictation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_all_words"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/btn_writing_dictation"
+        android:text="ПИСАТЬ ДИКТАНТ"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:background="@drawable/botton_panel_for_all"/>
+</RelativeLayout>
+

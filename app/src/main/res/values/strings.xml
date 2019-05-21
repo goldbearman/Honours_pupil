@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Rx</string>
+    <string name="toast_file_deleted">Удален!</string>
+
+    <string name="profile">Профиль</string>
+    <string name="search">Поиск</string>
+    <string name="learn">Учить слова</string>
+    <string name="dictation">Диктант</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="information_search_fragment">Выберете необходимые слова и добавьте их либо в новый список,
+        либо в уже существующий. Если в списке эти слова уже имеются, они не добавятся.</string>
+    <string name="information_learning_fragment">
+        \"Мои подборки\" - это списки слов, которые вы выбрали во вкладке \"Поиск\" для изучения. \n
+        \"Подборки по классам\" - это слова, которые по школьной программе изучают в этих классах.
+        Вы можете добавить все слова класса нажав на плюс, либо зайти в них и выбрать интересующие вас слова.
+    </string>
+    <string name="information_dictation_fragment">В \"Подборки для написания диктанта\" появляются списки только в том случае,
+        если все слова списка в \"Мои подборки\" во вкладке \"Учить слова\" выучены.
+    </string>
+    <string name="tv_create_new">Создать новую</string>
+    <string name="check">Проверить</string>
+    <string name="insert_word">Вставь букву</string>
+    <string name="void_text" />
+    <string name="learn_words">Учим слова</string>
+    <string name="write_word">Напиши слово</string>
+
+
+    <string-array name="variatns">
+        <item>Сделать фото</item>
+        <item>Выбрать из галереи</item>
+    </string-array>
+
+
+    <plurals name="plurals_word">
+        <item quantity="zero">НЕТ СЛОВ</item>
+        <item quantity="one">%1$d СЛОВО</item>
+        <item quantity="two">%1$d СЛОВА</item>
+        <item quantity="few">%1$d СЛОВА</item>
+        <item quantity="many">%1$d СЛОВ</item>
+        <item quantity="other">%1$d СЛОВ</item>
+    </plurals>
+
+</resources>

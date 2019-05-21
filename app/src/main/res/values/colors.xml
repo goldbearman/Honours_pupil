@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_primary">#bf43ac</color>
+    <color name="purple_primary_dark">#900089</color>
+    <color name="purple_accent">#D81B60</color>
+
+
+    <color name="yellow_primary">#FFEB3B</color>
+    <color name="yellow_primary_dark">#FBC02D</color>
+    <color name="yellow_accent">#FFEB3B</color>
+
+    <color name="orange_primary">#FF5722</color>
+    <color name="orange_primary_dark">#E64A19</color>
+    <color name="orange_accent">#FF5722</color>
+
+    <color name="red_primary">#F44336</color>
+    <color name="red_primary_dark">#D32F2F</color>
+    <color name="red_accent">#FF5252</color>
+
+    <color name="green_primary">#4CAF50</color>
+    <color name="green_primary_dark">#388E3C</color>
+    <color name="green_accent">#4CAF50</color>
+
+    <color name="dark_blue_primary">#3F51B5</color>
+    <color name="dark_blue_primary_dark">#2633A6</color>
+    <color name="dark_blue_accent">#536DFE</color>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="different">#b5e7e41c</color>
+    <color name="create_new">#e6f203</color>
+    <color name="photo_color">#616161</color>
+    <color name="primary_device_default_dark">#E64A19</color>
+
+    <color name="get_color_primary_dark">?attr/colorPrimaryDark</color>
+
+</resources>
