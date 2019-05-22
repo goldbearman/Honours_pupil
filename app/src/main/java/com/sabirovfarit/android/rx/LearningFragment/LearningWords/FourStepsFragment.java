@@ -192,8 +192,7 @@ public class FourStepsFragment extends Fragment implements View.OnClickListener 
             }
         }
         if (checkIsStage(words, 1) == words.size()) {
-            btnNext.setVisibility(View.INVISIBLE);
-            btnNext.setEnabled(false);
+            btnNext.setVisibility(View.GONE);
             for (int i = 0; i < words.size(); i++) {
                 if (!words.get(i).isStage2()) {
                     Word word = words.get(i);
@@ -263,7 +262,6 @@ public class FourStepsFragment extends Fragment implements View.OnClickListener 
         }
         if (checkIsStage(words, 2) == words.size()) {
             btnNext.setVisibility(View.INVISIBLE);
-            btnNext.setEnabled(false);
             for (int i = 0; i < words.size(); i++) {
                 if (!words.get(i).isStage3()) {
                     Word word = words.get(i);
