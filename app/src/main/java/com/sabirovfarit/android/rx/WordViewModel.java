@@ -27,12 +27,16 @@ public class WordViewModel extends ViewModel {
     private LiveData<List<WordsList>> ldLearnInClassTrue;
     private LiveData<List<WordsList>> ldLearnInClassFalse;
     private LiveData<List<WordsList>> learnedTrueLD;
+    private LiveData<List<Word>> wordsByIdWordListLD;
     private AppDB database = App.getInstance().getDatabase();
 
 
-    private final MutableLiveData<List<Long>> listIdLiveData = new MutableLiveData<>();
+    private MutableLiveData<List<Long>> listIdLiveData;
 
     public void setListIdLiveData(List<Long> list) {
+        if (listIdLiveData != null) {
+            listIdLiveData = new MutableLiveData<>();
+        }
         listIdLiveData.postValue(list);
     }
 
@@ -56,10 +60,10 @@ public class WordViewModel extends ViewModel {
     public LiveData<List<Word>> getWordsByIdWordListLD(long idWordsList) {
         Flowable<List<Word>> flowable = database.wordsListDao().getFlowableIdsFromListId(idWordsList)
                 .observeOn(Schedulers.io())
-                .map(wordsList -> wordsList.getListId())
+                .map(WordsList::getListId)
                 .flatMap(list -> database.wordDao().getWordsByIdFlowable(list));
 
-        LiveData<List<Word>> wordsByIdWordListLD = LiveDataReactiveStreams.fromPublisher(flowable);
+        wordsByIdWordListLD = LiveDataReactiveStreams.fromPublisher(flowable);
         return wordsByIdWordListLD;
     }
 
@@ -92,5 +96,14 @@ public class WordViewModel extends ViewModel {
         this.idsList = idsList;
     }
 
-
+    @Override
+    protected void onCleared() {
+        super.onCleared();
+        wordLiveData = null;
+        ldLearnInClassTrue = null;
+        ldLearnInClassFalse = null;
+        learnedTrueLD = null;
+        wordsByIdWordListLD = null;
+        listIdLiveData = null;
+    }
 }
